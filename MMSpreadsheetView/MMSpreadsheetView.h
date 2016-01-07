@@ -326,6 +326,13 @@
  */
 - (void)flashScrollIndicators;
 
+/**
+ I need the following two header methods in order to access the individual cells - modified by Leo Asher
+ */
+- (UICollectionView *)collectionViewForDataSourceIndexPath:(NSIndexPath *)indexPath;
+
+- (NSIndexPath *)dataSourceIndexPathFromCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath;
+
 ///---------------------------------------
 /// @name Scroll View Properties
 ///---------------------------------------
